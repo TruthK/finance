@@ -1,6 +1,5 @@
-# Copyright (c) Microsoft Corporation.
-# Licensed under the MIT License.
 
+# 源码来自https://github.com/TruthK/qlib
 import lightgbm as lgb
 import numpy as np
 import pandas as pd
