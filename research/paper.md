@@ -3,10 +3,13 @@
 我们提出了一个基于Transformer Encoder的胶囊网络模型，该模型使用Transformer编码器提取社交媒体的深层语义特征，然后通过胶囊网络捕获文本的结构关系。  
 ![avatar](./pic/Transformer-Based Capsule Network For Stock Movements Prediction.png)
 文章出处：IJCAI  
-缺点：没有添加基本面的数据，没有比金融模型进行关联，文章有点水
+缺点：    
 
-# HATS: A Hierarchical Graph Attention Network for Stock MovementPrediction
-HATS选择性聚集来自不同关系的信息并添加信息代表公司。具体来说，节点使用从特征提取的特征来初始化特征提取模块。HATS用作关系建模模块以有选择地从邻居那里收集信息节点。带有附加信息的表示形式是然后输入到特定于任务的预测层中
+#Spatiotemporal Hypergraph Convolution Network for Stock Movement Forecastin  
+文章出处：ICDM  
+超图上的门控时间卷积，以便以时间感知的方式了解股票关系上的股价演变。  
+特点：使用超图卷积（HGCN）网络通过聚合来自其相邻节点的特征来更新节点的特征。这种卷积可以被视为相关股票之间的信息交换
+缺点：还是老问题，黑箱，与金融知识结合不够，解释性差
 
 
 # DoubleEnsemble: A New Ensemble Method Based on Sample Reweighting and Feature Selection for Financial Data Analysis  
@@ -30,4 +33,16 @@ HATS选择性聚集来自不同关系的信息并添加信息代表公司。具�
 优点：金融模型与ml模型进行联系    
 知乎：https://zhuanlan.zhihu.com/p/143853032
 > Gu S, Kelly B, Xiu D. Autoencoder asset pricing models[J]. Journal of Econometrics, 2020.
+
+# HATS: A Hierarchical Graph Attention Network for Stock MovementPrediction
+HATS选择性聚集来自不同关系的信息并添加信息代表公司。具体来说，节点使用从特征提取的特征来初始化特征提取模块。HATS用作关系建模模块以有选择地从邻居那里收集信息节点。带有附加信息的表示形式是然后输入到特定于任务的预测层中
+
+# Spatial-Temporal Synchronous Graph Convolutional Networks: A New Framework for Spatial-Temporal Network Data Forecasting 
+* 构造了局部时空图，它将相邻时间步长的单个空间图连接成一个图。
+* 设计Spatial-Temporal Synchronous Graph Convolutional Module (STSGCM) 模块，用以提取局部时空图的时空相关性。
+* 设计Spatial-Temporal Synchronous Graph Convolutional Layer (STSGCL) 层，即在不同时间段部署多个STSGCM，用以捕获长程时空网络数据的异质性。
+* 堆叠多个STSGCL 以聚合长程时空关系和异质性，并得到最终预测结果。  
+特点：实现时空相关性的同步捕获
+  
+#Self-Attention ConvLSTM for Spatiotemporal Prediction。
 
