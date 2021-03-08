@@ -6,7 +6,7 @@
 缺点：没有添加基本面的数据，没有比金融模型进行关联，文章有点水
 
 # HATS: A Hierarchical Graph Attention Network for Stock MovementPrediction
-
+HATS选择性聚集来自不同关系的信息并添加信息代表公司。具体来说，节点使用从特征提取的特征来初始化特征提取模块。HATS用作关系建模模块以有选择地从邻居那里收集信息节点。带有附加信息的表示形式是然后输入到特定于任务的预测层中
 
 
 # DoubleEnsemble: A New Ensemble Method Based on Sample Reweighting and Feature Selection for Financial Data Analysis  
